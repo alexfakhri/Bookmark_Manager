@@ -28,10 +28,6 @@ feature "User adds new link" do
 			fill_in 'tags', with: tags.join(' ')
 			click_button 'Add link'
 		end
-		
-
-
-
 
 	end
 end
