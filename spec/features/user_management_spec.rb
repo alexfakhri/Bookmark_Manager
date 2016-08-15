@@ -5,7 +5,7 @@ require './spec/features/helpers/session'
 include SessionHelpers
 
 feature "User signs up" do
-	
+
 	scenario "when being logged out" do
     	expect{ sign_up }.to change(User, :count).by(1)
     	expect(page).to have_content("Welcome, alice@example.com")
@@ -48,7 +48,7 @@ feature "User signs in" do
     expect(page).not_to have_content("Welcome, test@test.com")
   end
 
-end	
+end
 
 feature 'User Signs out' do
 
@@ -66,25 +66,3 @@ feature 'User Signs out' do
   end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
